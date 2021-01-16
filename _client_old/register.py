@@ -53,10 +53,10 @@ def main(self):
             date_error.grid(row=8,column=0,columnspan=2)
             send = False
         
-        if len(username) < 5 or len(username) > 20:
+        if len(username) < 5 or len(username) > 30:
             username_error.grid(row=2,column=0,columnspan=2)
             send = False
-        if len(password) < 5 or len(password) > 20:
+        if len(password) < 5 or len(password) > 100:
             password_error.grid(row=4,column=0,columnspan=2)
             send = False
         if Re_password != password:
